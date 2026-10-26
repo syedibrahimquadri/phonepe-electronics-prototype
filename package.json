@@ -1,0 +1,19 @@
+{
+  "name": "phonepe-electronics-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Clickable concept prototype of an electronics marketplace inside PhonePe. Personal product case study, not affiliated with PhonePe.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test \"tests/*.test.js\""
+  },
+  "devDependencies": {
+    "vite": "5.4.11"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
