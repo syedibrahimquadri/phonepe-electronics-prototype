@@ -1,10 +1,36 @@
-/* small screens */
-@media (max-width:760px){
+/* Phones: the prototype fills the screen like a real app.
+   Also used for phones held sideways (short screens), where the desktop layout would be cramped. */
+@media (max-width: 760px), (max-height: 500px) {
   body{padding:0;display:block;background:var(--page)}
   .rail{display:none}
   .device{height:100%;gap:0;align-items:stretch}
-  .concept{border-radius:0;background:var(--plum-deep);color:#fff;font-size:12px;padding:6px max(16px, env(safe-area-inset-left, 0px))}
-  .phone{width:100%;flex:1;min-height:0;height:auto;border-radius:0;padding:0;box-shadow:none}
+  .concept{
+    border-radius:0;background:var(--plum-deep);color:#fff;font-size:12px;
+    padding:calc(6px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) 6px max(16px, env(safe-area-inset-left, 0px));
+  }
+  .phone{width:100%;flex:1;min-height:0;height:auto;border-radius:0;padding:0;box-shadow:none;background:var(--page)}
   .screen-wrap{border-radius:0}
-  .notch{display:none}
+
+  /* The phone already shows its own status bar, so drop the fake one and the notch */
+  .notch,.status{display:none}
+  .appbar{padding-top:14px}
+  .home-top{padding-top:18px}
+  .done{padding-top:40px}
+
+  /* Keep buttons clear of the home indicator on iPhones */
+  .bottom-bar{padding-bottom:max(16px, calc(env(safe-area-inset-bottom, 0px) + 10px))}
+  .pay-actions{padding-bottom:max(32px, calc(env(safe-area-inset-bottom, 0px) + 16px))}
+}
+
+/* Short phones (iPhone SE and similar): smaller device picture so the price and EMI plans show sooner */
+@media (max-width: 760px) and (max-height: 700px), (max-height: 500px) {
+  .hero-dev{height:220px}
+  .hero-dev i{width:88px;height:172px;border-width:5px;border-radius:18px}
+  .hero-dev .dots{bottom:8px}
+  .hero-dev i.tab{width:200px;height:136px}
+}
+
+/* Phones held sideways: keep the app at a comfortable reading width */
+@media (max-height: 500px) and (min-width: 761px) {
+  .screen-wrap{max-width:600px;margin:0 auto}
 }

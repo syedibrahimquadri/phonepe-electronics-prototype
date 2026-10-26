@@ -1,8 +1,9 @@
 // Scale the phone mock-up and the guide panel down on short desktop windows,
 // so both are fully visible without scrolling.
-// On phones (760px wide or less) the prototype fills the screen instead, so nothing is scaled.
+// On phones (760px wide or less, or held sideways) the prototype fills the screen instead, so nothing is scaled.
 
-const MOBILE_QUERY = window.matchMedia('(max-width: 760px)');
+// Must match the phone media query in responsive.css.
+const MOBILE_QUERY = window.matchMedia('(max-width: 760px), (max-height: 500px)');
 const PAGE_PADDING = 64; // body has 32px padding top and bottom
 
 function fitHeight(element, minScale) {
