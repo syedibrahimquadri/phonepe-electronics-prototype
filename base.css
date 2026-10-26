@@ -1,0 +1,19 @@
+/* Design tokens, reset and page layout */
+:root{
+  color-scheme:light;
+  --plum:#5F259F; --plum-deep:#3E1470; --plum-soft:#EFE8F8;
+  --ink:#1D1630; --muted:#6B6480; --line:#E6E1EE;
+  --page:#F5F3F8; --card:#FFFFFF;
+  --gold:#F2B705; --gold-soft:#FFF4CC;
+  --go:#14845A; --go-soft:#E3F4EC;
+  --desk:#E9E5EF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+.device{display:flex;flex-direction:column;align-items:center;gap:12px;flex:none}
+.concept{font-size:13px;font-weight:600;color:var(--plum-deep);background:#fff;border-radius:999px;padding:5px 14px;line-height:1.3;text-align:center}
+body{font-family:'Hind',system-ui,sans-serif;color:var(--ink);background:var(--desk);display:flex;justify-content:center;align-items:center;gap:56px;padding:32px 16px;min-height:100vh}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--plum);outline-offset:2px;border-radius:8px}
+.num{font-variant-numeric:tabular-nums}
+[hidden]{display:none!important}

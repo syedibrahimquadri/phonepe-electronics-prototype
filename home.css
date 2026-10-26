@@ -1,0 +1,23 @@
+/* 1. PhonePe home */
+.home-top{background:var(--plum);color:#fff;padding:56px 16px 22px}
+.home-top .row{display:flex;justify-content:space-between;align-items:center}
+.avatar{width:38px;height:38px;border-radius:50%;background:#fff3;display:grid;place-items:center;font-weight:600}
+.home-top .loc{font-size:13px;opacity:.8}
+.home-top .loc b{display:block;font-size:16px;opacity:1}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;background:#fff;margin:-10px 12px 0;border-radius:18px;padding:16px 6px;position:relative}
+.tile{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12.5px;text-align:center;line-height:1.2;padding:4px}
+.tile .ic{width:44px;height:44px;border-radius:14px;background:var(--plum-soft);display:grid;place-items:center;color:var(--plum)}
+.tile .ic svg{width:22px;height:22px}
+.promo{margin:16px 12px 0;border-radius:20px;background:var(--plum-deep);color:#fff;padding:18px;display:grid;grid-template-columns:1fr 92px;gap:8px;align-items:center;text-align:left;width:calc(100% - 24px);position:relative;overflow:hidden}
+.promo .new{background:var(--gold);color:var(--ink);font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;justify-self:start}
+.promo h4{font-size:21px;line-height:1.15;font-weight:700;margin:8px 0 4px}
+.promo p{font-size:14px;opacity:.85;line-height:1.35}
+.promo .go{margin-top:12px;display:inline-block;background:#fff;color:var(--plum-deep);font-weight:600;font-size:14px;padding:7px 14px;border-radius:999px}
+.list-card{background:#fff;margin:16px 12px 0;border-radius:18px;padding:14px 16px}
+.list-card h5{font-size:15px;font-weight:600;margin-bottom:10px}
+.mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+
+.home-top .loc{flex:1;margin-left:12px}
+.promo-art{display:grid;place-items:center}
+.promo-art i{display:block;width:52px;height:100px;border:5px solid #fff;border-radius:12px;transform:rotate(8deg)}
+.list-card:last-child{margin-bottom:24px}

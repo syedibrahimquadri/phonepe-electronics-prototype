@@ -1,0 +1,29 @@
+/* phone */
+.phone{width:390px;height:844px;border-radius:52px;background:#120C1D;padding:12px;box-shadow:0 30px 60px -20px #3E147055;flex:none}
+.screen-wrap{position:relative;width:100%;height:100%;border-radius:42px;overflow:hidden;background:var(--page)}
+.status{position:absolute;top:0;left:0;right:0;height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 28px;font-size:14px;font-weight:600;z-index:20;pointer-events:none}
+.status.light{color:#fff}
+.notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:110px;height:30px;background:#120C1D;border-radius:20px;z-index:21}
+.screen{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;background:var(--page);transition:transform .32s cubic-bezier(.2,.8,.2,1);scrollbar-width:none}
+.screen::-webkit-scrollbar{display:none}
+.screen.off-right{transform:translateX(100%)}
+.screen.off-left{transform:translateX(-28%)}
+@media (prefers-reduced-motion:reduce){.screen{transition:none}}
+
+/* shared bits */
+.appbar{position:sticky;top:0;z-index:10;background:var(--plum);color:#fff;padding:52px 16px 14px;display:flex;align-items:center;gap:12px}
+.appbar h2{font-size:19px;font-weight:600;flex:1}
+.icon-btn{width:36px;height:36px;display:grid;place-items:center;border-radius:50%}
+.icon-btn svg{width:22px;height:22px}
+.search{display:flex;align-items:center;gap:8px;background:#fff;border-radius:12px;padding:10px 12px;color:var(--muted);font-size:15px}
+.search svg{width:18px;height:18px;flex:none}
+.sec{padding:20px 16px 4px}
+.sec h3{font-size:17px;font-weight:600;margin-bottom:12px;display:flex;justify-content:space-between;align-items:baseline}
+.sec h3 small{font-size:13px;font-weight:500;color:var(--plum)}
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px}
+.tag.go{background:var(--go-soft);color:var(--go)}
+.tag.gold{background:var(--gold-soft);color:#7A5B00}
+.tag.soon{background:var(--line);color:var(--muted)}
+.cta{display:block;width:100%;background:var(--plum);color:#fff;font-weight:600;font-size:16px;padding:15px;border-radius:14px;text-align:center}
+.cta.ghost{background:#fff;color:var(--plum);border:1.5px solid var(--plum)}
+.bottom-bar{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--line);padding:12px 16px 26px;display:flex;gap:12px;align-items:center;z-index:5}

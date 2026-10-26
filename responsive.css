@@ -1,0 +1,10 @@
+/* small screens */
+@media (max-width:760px){
+  body{padding:0;display:block;background:var(--page)}
+  .rail{display:none}
+  .device{height:100%;gap:0;align-items:stretch}
+  .concept{border-radius:0;background:var(--plum-deep);color:#fff;font-size:12px;padding:6px max(16px, env(safe-area-inset-left, 0px))}
+  .phone{width:100%;flex:1;min-height:0;height:auto;border-radius:0;padding:0;box-shadow:none}
+  .screen-wrap{border-radius:0}
+  .notch{display:none}
+}

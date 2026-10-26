@@ -1,0 +1,15 @@
+/* 5. Pay */
+.sum{background:#fff;margin:12px;border-radius:18px;padding:16px}
+.sum .line{display:flex;justify-content:space-between;font-size:14.5px;padding:6px 0}
+.sum .line span:first-child{color:var(--muted)}
+.sum .line.total{border-top:1px solid var(--line);margin-top:6px;padding-top:12px;font-weight:700;font-size:16px}
+.sum .line.total span:first-child{color:var(--ink)}
+.pay-opts{background:#fff;margin:0 12px;border-radius:18px;overflow:hidden}
+.pay-opt{display:flex;align-items:center;gap:12px;padding:14px 16px;border-top:1px solid var(--line);width:100%;text-align:left}
+.pay-opt:first-child{border-top:0}
+.radio{width:20px;height:20px;border-radius:50%;border:2px solid var(--line);flex:none}
+.pay-opt[aria-checked="true"] .radio{border:6px solid var(--plum)}
+.pay-opt b{font-size:15px;font-weight:600;display:block}
+.pay-opt span{font-size:12.5px;color:var(--muted)}
+
+.pay-actions{padding:16px 12px 32px}
