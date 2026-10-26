@@ -1,8 +1,8 @@
 // Product page: EMI plans, add-ons and how you get it. Also keeps the bottom bar total in sync.
 
-import { getShop } from '../data/catalog.js';
-import { formatINR, monthlyInstalment, orderTotal } from '../pricing.js';
-import { state } from '../state.js';
+import { getShop } from './catalog.js';
+import { formatINR, monthlyInstalment, orderTotal } from './pricing.js';
+import { state } from './state.js';
 
 const $ = (id) => document.getElementById(id);
 

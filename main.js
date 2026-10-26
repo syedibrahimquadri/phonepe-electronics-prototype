@@ -1,11 +1,11 @@
-import './styles/index.css';
+import './index.css';
 
-import { getProduct } from './data/catalog.js';
+import { getProduct } from './catalog.js';
 import { initNavigation, show } from './navigation.js';
 import { state } from './state.js';
-import { enterCategory, initCategory } from './screens/category.js';
-import { initProduct, renderProduct } from './screens/product.js';
-import { initCheckout, renderCheckout } from './screens/checkout.js';
+import { enterCategory, initCategory } from './category.js';
+import { initProduct, renderProduct } from './product.js';
+import { initCheckout, renderCheckout } from './checkout.js';
 
 function renderOrder() {
   renderProduct();

@@ -1,4 +1,4 @@
-import { PRODUCTS } from './data/catalog.js';
+import { PRODUCTS } from './catalog.js';
 import { DEFAULT_EMI_TERM } from './pricing.js';
 
 // One shared, mutable state object for the whole prototype.

@@ -1,8 +1,8 @@
 // Review and pay, and the order-placed screen.
 
-import { getShop } from '../data/catalog.js';
-import { EXCHANGE_CREDIT, PROTECTION_FEE, formatINR, monthlyInstalment } from '../pricing.js';
-import { state } from '../state.js';
+import { getShop } from './catalog.js';
+import { EXCHANGE_CREDIT, PROTECTION_FEE, formatINR, monthlyInstalment } from './pricing.js';
+import { state } from './state.js';
 import { currentTotal } from './product.js';
 
 const $ = (id) => document.getElementById(id);

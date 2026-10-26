@@ -1,10 +1,10 @@
 @import './base.css';
 @import './rail.css';
 @import './phone.css';
-@import './screens/home.css';
-@import './screens/store.css';
-@import './screens/category.css';
-@import './screens/product.css';
-@import './screens/pay.css';
-@import './screens/done.css';
+@import './home.css';
+@import './store.css';
+@import './category.css';
+@import './product.css';
+@import './pay.css';
+@import './done.css';
 @import './responsive.css';

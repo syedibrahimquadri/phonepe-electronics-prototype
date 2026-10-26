@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { PRODUCTS, BUDGETS, getBudget } from '../src/data/catalog.js';
-import { filterProducts, formatINR, inBudget, monthlyInstalment, orderTotal } from '../src/pricing.js';
+import { PRODUCTS, BUDGETS, getBudget } from './catalog.js';
+import { filterProducts, formatINR, inBudget, monthlyInstalment, orderTotal } from './pricing.js';
 
 test('formatINR uses Indian digit grouping', () => {
   assert.equal(formatINR(12999), '₹12,999');

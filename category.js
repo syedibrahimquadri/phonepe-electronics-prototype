@@ -1,8 +1,8 @@
 // Mobiles & Tablets: subcategory chips, budget filter and the product list.
 
-import { PRODUCTS, BUDGETS, getBudget, getShop } from '../data/catalog.js';
-import { filterProducts, formatINR, monthlyInstalment, DEFAULT_EMI_TERM } from '../pricing.js';
-import { state } from '../state.js';
+import { PRODUCTS, BUDGETS, getBudget, getShop } from './catalog.js';
+import { filterProducts, formatINR, monthlyInstalment, DEFAULT_EMI_TERM } from './pricing.js';
+import { state } from './state.js';
 
 const $ = (id) => document.getElementById(id);
 

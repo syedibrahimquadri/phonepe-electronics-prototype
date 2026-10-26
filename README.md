@@ -28,21 +28,24 @@ npm run build    # production build in dist/
 
 ## Project structure
 
+All files sit in one folder, so the project can be uploaded to GitHub straight from the browser.
+
 ```
-index.html               All six screens and the guide panel
-src/
-  main.js                Entry point: wires the screens together
-  state.js               Shared state (filters, selected product, choices)
-  navigation.js          Screen stack, slide transitions, back and jump
-  pricing.js             Pure logic: totals, EMI, budget filters, ₹ formatting
-  data/catalog.js        Sample products, shops and budget bands
-  screens/
-    category.js          Chips, budget filter, product list
-    product.js           EMI plans, add-ons, fulfilment, running total
-    checkout.js          Order summary, payment method, order placed
-  styles/                Tokens and one stylesheet per screen
-tests/pricing.test.js    Unit tests for pricing.js
-public/                  Favicon and social preview image
+index.html          All six screens and the guide panel
+main.js             Entry point: wires the screens together
+state.js            Shared state (filters, selected product, choices)
+navigation.js       Screen stack, slide transitions, back and jump
+pricing.js          Pure logic: totals, EMI, budget filters, ₹ formatting
+catalog.js          Sample products, shops and budget bands
+category.js         Screen: chips, budget filter, product list
+product.js          Screen: EMI plans, add-ons, fulfilment, running total
+checkout.js         Screen: order summary, payment method, order placed
+index.css           Imports the stylesheets below
+base.css            Design tokens, reset and page layout
+rail.css, phone.css, responsive.css
+home.css, store.css, category.css, product.css, pay.css, done.css
+pricing.test.js     Unit tests for pricing.js
+favicon.svg, og-image.png   Tab icon and social preview image
 ```
 
 ## Deploy on Vercel
