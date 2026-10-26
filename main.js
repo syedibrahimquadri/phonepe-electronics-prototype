@@ -6,6 +6,7 @@ import { state } from './state.js';
 import { enterCategory, initCategory } from './category.js';
 import { initProduct, renderProduct } from './product.js';
 import { initCheckout, renderCheckout } from './checkout.js';
+import { initFitToScreen } from './fit.js';
 
 function renderOrder() {
   renderProduct();
@@ -38,3 +39,4 @@ document.querySelectorAll('[data-budget]').forEach((band) => {
 initProduct({ onChange: renderOrder });
 initCheckout();
 renderOrder();
+initFitToScreen();

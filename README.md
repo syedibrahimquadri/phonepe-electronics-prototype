@@ -35,6 +35,7 @@ index.html          All six screens and the guide panel
 main.js             Entry point: wires the screens together
 state.js            Shared state (filters, selected product, choices)
 navigation.js       Screen stack, slide transitions, back and jump
+fit.js              Shrinks the phone to fit short desktop windows
 pricing.js          Pure logic: totals, EMI, budget filters, ₹ formatting
 catalog.js          Sample products, shops and budget bands
 category.js         Screen: chips, budget filter, product list
